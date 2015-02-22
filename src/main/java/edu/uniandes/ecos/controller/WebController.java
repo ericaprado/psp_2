@@ -39,12 +39,12 @@ public class WebController extends HttpServlet{
                
         String result = "<HTML>";
                
-        result += "<H1>Prueba</H1></BR></BR>";
+        result += "<H1>Prueba</H1></BR>";
         
         NumericalIntegration numericalIntegration = new NumericalIntegration();
         result += "0 to x= 1.1     dof = 9  p=" + numericalIntegration.calculateIntegralValue(10, 1.1, 9); 
-        result += "0 to x= 1.1812  dof = 10 p=" + numericalIntegration.calculateIntegralValue(10, 1.1812, 10); 
-        result += "0 to x= 2.750   dof = 30 p=" + numericalIntegration.calculateIntegralValue(10, 2.750, 30);   
+        result += "</BR>0 to x= 1.1812  dof = 10 p=" + numericalIntegration.calculateIntegralValue(10, 1.1812, 10); 
+        result += "</BR>0 to x= 2.750   dof = 30 p=" + numericalIntegration.calculateIntegralValue(10, 2.750, 30);   
                 
         result += "</HTML>";
         
