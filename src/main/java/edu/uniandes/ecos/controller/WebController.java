@@ -39,14 +39,14 @@ public class WebController extends HttpServlet{
                
         String result = "<HTML>";
                
-        result += "<H1>Prueba</H1></BR>";
+        result += "<H1>Prueba</H1></BR><TABLE>";
         
         NumericalIntegration numericalIntegration = new NumericalIntegration();
-        result += "0 to x= 1.1     dof = 9  p=" + numericalIntegration.calculateIntegralValue(10, 1.1, 9); 
-        result += "</BR>0 to x= 1.1812  dof = 10 p=" + numericalIntegration.calculateIntegralValue(10, 1.1812, 10); 
-        result += "</BR>0 to x= 2.750   dof = 30 p=" + numericalIntegration.calculateIntegralValue(10, 2.750, 30);   
+        result += "<TR><TD>0 to x= 1.1</TD><TD>dof = 9</TD><TD>p=" + numericalIntegration.calculateIntegralValue(10, 1.1, 9)+"</TD></TR>"; 
+        result += "<TR><TD>0 to x= 1.1812</TD><TD>dof = 10</TD><TD>p=" + numericalIntegration.calculateIntegralValue(10, 1.1812, 10)+"</TD></TR>"; 
+        result += "<TR><TD>0 to x= 2.750</TD><TD>dof = 30</TD><TD>p=" + numericalIntegration.calculateIntegralValue(10, 2.750, 30)+"</TD></TR>";   
                 
-        result += "</HTML>";
+        result += "</TABLE></HTML>";
         
         resp.getWriter().write(result);          
        
