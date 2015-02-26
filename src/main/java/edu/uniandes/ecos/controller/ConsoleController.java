@@ -8,11 +8,16 @@ package edu.uniandes.ecos.controller;
 import edu.uniandes.ecos.NumericalIntegration;
 
 /**
- *
+ * Clase controladora para mostrar resultados por consola 
  * @author ASUS-PC
  */
 public class ConsoleController {
     
+    /**
+     * Clase main que se llama cuando la ejecución se va a realizar 
+     * mostrando resultados por consola
+     * @param args 
+     */
     public static void main( String[] args )
     {
         NumericalIntegration numericalIntegration = new NumericalIntegration();

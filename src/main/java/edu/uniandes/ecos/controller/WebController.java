@@ -15,12 +15,17 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.*;
 
 /**
- *
+ * Clase controladora para resultados por web
  * @author ASUS-PC
  */
 public class WebController extends HttpServlet{ 
     
-    
+    /**
+     * Clase main que se llama cuando el programa es ejecutado y el resultado
+     * se mostrará a través de web
+     * @param args
+     * @throws Exception 
+     */
     public static void main( String[] args )  throws Exception 
     {
         Server server = new Server(Integer.valueOf(System.getenv("PORT")));

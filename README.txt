@@ -4,10 +4,10 @@ GitHub:
 
 ericaprado
 
-git remote add origin https://github.com/ericaprado/psp_1_1.git
+git remote add origin https://github.com/ericaprado/psp_2.git
 
 usuario: ericaprado - erica.estefanny@gmail.com
 
 Verificar Resultados en:
 
-http://shielded-brook-8385.herokuapp.com/
+http://psp-2-erica-prado.herokuapp.com/
